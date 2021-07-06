@@ -1,0 +1,10 @@
+name: BetterNetherite
+version: ${project.version}
+main: me.anuzsubedi.betternetherite.Main
+api-version: 1.17
+prefix: BetterNetherite
+description: If a player has full netherite armor then they will get fire resistance.
+commands:
+  BetterNetherite:
+    description: Change if elytra is required or not.
+    usage: /betternetherite <enableElytra>/<disableElytra>
