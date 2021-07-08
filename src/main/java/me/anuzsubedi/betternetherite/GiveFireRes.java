@@ -34,7 +34,7 @@ public class GiveFireRes implements Listener {
                 this.wornLeggings = Objects.requireNonNull(player.getInventory().getLeggings()).getType();
                 this.wornBoots = Objects.requireNonNull(player.getInventory().getBoots()).getType();
 
-                if(e.getCause() == EntityDamageEvent.DamageCause.FIRE || e.getCause() == EntityDamageEvent.DamageCause.LAVA || e.getCause() == EntityDamageEvent.DamageCause.FIRE_TICK ){
+                if(e.getCause() == EntityDamageEvent.DamageCause.FIRE || e.getCause() == EntityDamageEvent.DamageCause.LAVA || e.getCause() == EntityDamageEvent.DamageCause.FIRE_TICK || e.getCause() == EntityDamageEvent.DamageCause.HOT_FLOOR){
                     if (allowElytra){
                         if (wornHelmet == Material.NETHERITE_HELMET && (wornChestPlate == Material.NETHERITE_CHESTPLATE || wornChestPlate == Material.ELYTRA) && wornLeggings == Material.NETHERITE_LEGGINGS && wornBoots == Material.NETHERITE_BOOTS) {
                             player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 1, 0, false, true));
